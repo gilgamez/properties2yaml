@@ -1,0 +1,32 @@
+{
+  "name": "properties2yaml",
+  "version": "1.0.0",
+  "description": "convert properties to yaml",
+  "main": "index.js",
+  "author": "Gilgamesh Nootebos",
+  "license": "MIT",
+  "private": true,
+  "bin": {
+    "p2y": "dist/index.js"
+  },
+  "dependencies": {
+    "bluebird": "3.5.1",
+    "mz": "2.7.0",
+    "properties": "1.2.1",
+    "yamljs": "0.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-plugin-shebang": "0.0.0",
+    "babel-preset-latest": "6.24.1"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ],
+    "plugins": ["shebang"]
+  },
+  "scripts": {
+    "dist": "babel src --out-dir dist"
+  }
+}
